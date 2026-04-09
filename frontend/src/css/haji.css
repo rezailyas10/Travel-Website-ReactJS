@@ -1,0 +1,241 @@
+:root {
+  --orange: #f97316;
+}
+
+.hero-section {
+  background-color: #f5f5f5;
+  min-height: auto;
+  padding: 100px 20px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 5rem; /* lebih lega jaraknya */
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  max-width: 500px; /* gambar lebih besar */
+}
+
+.hero-image img {
+  width: 100%;
+  height: 400px; /* lebih tinggi */
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  max-width: 650px; /* teks lebih lebar */
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: #f4e0a0;
+  color: #856404;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text h1 {
+  font-size: 2rem; /* teks lebih besar */
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.3;
+}
+
+.hero-text h1 em {
+  font-style: normal;
+  color: var(--orange);
+}
+
+.hero-text p {
+  font-size: 1rem; /* teks paragraf lebih besar */
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1.5rem; /* tombol tidak mepet */
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #25d366;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  border: 2px solid var(--orange);
+  color: var(--orange);
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  transform: translateY(-3px);
+  color: #fff;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .hero-section {
+    padding: 30px 20px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .hero-text {
+    max-width: 700px; /* biar tidak terlalu lebar */
+    max-height: fit-content;
+  }
+
+  .hero-image {
+    max-width: 650px;
+    width: 100%;
+  }
+
+  .hero-image img {
+    height: 380px;
+  }
+
+  .hero-text p {
+    text-align: center;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+  .hero-section {
+    padding: 30px 20px; /* kecilkan space atas bawah */
+  }
+
+  hero-container {
+    display: block; /* ganti flex jadi block */
+  }
+
+  .hero-image {
+    display: none; /* sembunyikan gambar */
+  }
+
+  .hero-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.35;
+  }
+
+  .hero-text p {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .hero-btns {
+    justify-content: center; /* tombol rata tengah */
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 0.7rem 1.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 20px 16px; /* kecilkan space atas bawah */
+  }
+
+  hero-container {
+    display: block; /* ganti flex jadi block */
+  }
+  .hero-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.35;
+  }
+
+  .hero-text p {
+    text-align: center !important ;
+    font-size: 0.9rem;
+  }
+
+  .hero-badge {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .hero-btns {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.4rem;
+  }
+}
+
+/* paket */
+.badge-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+#furoda {
+  background-color: #f97316;
+}
+#khusus {
+  background-color: #f94716;
+}

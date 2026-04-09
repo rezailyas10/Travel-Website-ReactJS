@@ -1,0 +1,240 @@
+/* blog */
+.blog-section {
+  background: var(--blue);
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+}
+
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-section h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.blog-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 70px 20px;
+  }
+
+  .blog-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .blog-section p {
+    font-size: 0.95rem;
+  }
+}
+
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card {
+  border: none !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07) !important;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  cursor: pointer;
+  height: 100%;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+.card-img-top {
+  height: 210px;
+  object-fit: cover;
+  width: 100%;
+}
+.card-body {
+  padding: 20px;
+  background: #fff;
+}
+.badge-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: #fff;
+}
+.card-date {
+  font-size: 0.78rem;
+  color: #aaa;
+}
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.5;
+  margin: 10px 0 8px;
+}
+
+.card-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #f0f0f0;
+}
+.author-mini {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(196, 143, 38);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.author-name {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #333;
+}
+.read-time {
+  font-size: 0.72rem;
+  color: #aaa;
+}
+.read-more {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #f97316;
+}
+
+.detail-back {
+  background: none;
+  border: none;
+  color: #f97316;
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  padding: 0;
+}
+.detail-back:hover {
+  color: #a0721f;
+}
+.detail-img {
+  width: 100%;
+  height: clamp(200px, 40vw, 400px);
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+.detail-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.detail-category {
+  font-size: 0.8rem;
+  color: #f97316;
+  font-weight: 600;
+}
+.detail-date {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+.detail-title {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.detail-divider {
+  width: 44px;
+  height: 3px;
+  background: f97316;
+  border-radius: 2px;
+  margin-bottom: 22px;
+}
+.detail-content {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.9;
+  white-space: pre-line;
+}
+.detail-author-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 40px;
+  padding: 20px;
+  background: #fff8f0;
+  border-radius: 10px;
+  border-left: 4px solid #f97316;
+}
+.detail-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #f97316;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.detail-author-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+.detail-author-role {
+  font-size: 0.8rem;
+  color: #888;
+}
+@media (max-width: 768px) {
+  .detail-content {
+    font-size: 0.9rem;
+  }
+
+  .detail-author-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .detail-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 0.75rem;
+  }
+
+  .detail-author-name {
+    font-size: 0.9rem;
+  }
+  .detail-author-role {
+    font-size: 0.75rem;
+  }
+}

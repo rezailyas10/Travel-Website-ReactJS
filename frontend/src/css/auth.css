@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --blue: #0065b1;
+  --blue-dark: #054b81;
+  --orange: #f97316;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* CONTAINER */
+.auth-container {
+  background: linear-gradient(135deg, var(--blue), #0891d4);
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 16px;
+}
+
+/* CARD */
+.auth-card {
+  background: #fff;
+  padding: 36px 32px;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+  margin: auto;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* LOGO */
+.auth-logo {
+  width: 140px;
+  max-width: 100%;
+}
+
+/* INPUT */
+.form-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+}
+
+.form-control {
+  padding: 11px 14px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #fafafa;
+}
+
+.form-control:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(6, 118, 203, 0.12);
+  background: #fff;
+}
+
+/* BUTTON LOGIN */
+.auth-btn {
+  background: linear-gradient(135deg, var(--blue), #0676cb);
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 14px rgba(0, 101, 177, 0.35);
+  transition: all 0.2s ease;
+}
+
+.auth-btn:hover {
+  background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+  box-shadow: 0 6px 18px rgba(0, 101, 177, 0.45);
+  transform: translateY(-1px);
+  color: #fff;
+}
+
+/* DIVIDER */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 16px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e8e8e8;
+}
+
+.divider span {
+  font-size: 12px;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+/* GOOGLE BUTTON */
+.google-btn {
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  background: #fff;
+  padding: 11px 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+
+.google-btn svg {
+  margin-right: 10px;
+}
+
+.google-btn:hover {
+  background: #f7f9ff;
+  border-color: #c5d5f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* SWITCH */
+.switch-auth {
+  color: var(--orange);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.switch-auth:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* iPad Pro & tablet besar (769–1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .auth-card {
+    max-width: 420px;
+    padding: 32px 28px;
+  }
+}
+
+/* iPad Mini (481–768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .auth-container {
+    padding: 40px 24px;
+  }
+
+  .auth-card {
+    max-width: 400px;
+    padding: 30px 26px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 28px 18px;
+  }
+
+  .auth-card {
+    max-width: 100%;
+    padding: 26px 20px;
+  }
+
+  .auth-logo {
+    width: 120px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+  .auth-container {
+    padding: 22px 14px;
+  }
+
+  .auth-card {
+    padding: 22px 16px;
+  }
+
+  .form-control,
+  .auth-btn,
+  .google-btn {
+    font-size: 11px !important;
+  }
+}
